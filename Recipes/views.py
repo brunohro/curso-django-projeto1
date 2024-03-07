@@ -3,3 +3,6 @@ from django.http import HttpResponse
 
 def home(request):
     return render(request, 'recipes/pages/home.html') # namespace acompanhando na url 
+
+def recipes(request, id):
+    return render(request, 'recipes/pages/home.html') # namespace acompanhando na url 
