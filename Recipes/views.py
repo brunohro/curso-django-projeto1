@@ -5,4 +5,4 @@ def home(request):
     return render(request, 'recipes/pages/home.html') # namespace acompanhando na url 
 
 def recipes(request, id):
-    return render(request, 'recipes/pages/home.html') # namespace acompanhando na url 
+    return render(request, 'recipes/pages/recipes-view.html') # namespace acompanhando na url 
