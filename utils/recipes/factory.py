@@ -1,6 +1,8 @@
 # from inspect import signature
 from random import randint
+
 from faker import Faker
+
 
 def rand_ratio():
     return randint(840, 900), randint(473, 573)
@@ -26,7 +28,8 @@ def make_recipe():
             'last_name': fake.last_name(),
         },
         'category': {
-            'name': fake.word()
+            'name': fake.word(),
+            'id': fake.random_number(digits=2, fix_len=True),
         },
         'cover': {
             'url': 'https://loremflickr.com/%s/%s/food,cook' % rand_ratio(),
